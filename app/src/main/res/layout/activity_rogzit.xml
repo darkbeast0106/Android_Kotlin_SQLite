@@ -4,40 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".RogzitActivity"
     android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="Név"
+        android:id="@+id/et_nev"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_email"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:hint="Jegy"
+        android:inputType="number"
+        android:maxLength="1"
+        android:id="@+id/et_jegy"
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Olvasás"
-        android:id="@+id/btn_olvas"
-        />
+        android:id="@+id/btn_rogzit"
+        android:text="Rögzít"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rögzít"
-        android:id="@+id/btn_rogzitesre"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Törlés"
-        android:id="@+id/btn_torlesre"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Módosítás"
-        android:id="@+id/btn_modositasra"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:id="@+id/text_adatok"
-        android:maxLines="999"
-        android:scrollbars="vertical"
-        />
+        android:id="@+id/btn_rogzit_vissza"
+        android:text="Vissza"/>
 
 </LinearLayout>
